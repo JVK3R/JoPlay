@@ -50,7 +50,7 @@ JoPlay is an app for jailbroken PS4s. It looks and feels like a streaming app: y
 - **Home, Discover, Library and Search,** plus **See all** to open any row as a full grid.
 - **Subtitles** (the film's own and your add-ons'), **sound tracks** and **chapters**.
 - **The next episode** can start by itself, or wait for you.
-- **Updates itself:** JoPlay tells you when a new version is out and downloads it for you.
+- **Easy updates:** JoPlay tells you when a new version is out and downloads it for you, then shows the three steps to install it.
 
 JoPlay doesn't come with movies or shows. Those come from **add-ons** you add yourself (see [Add-ons](#add-ons)). To try it right away, it has **Open Movies** built in: three short films the Blender Foundation made free for everyone.
 
@@ -93,7 +93,7 @@ JoPlay doesn't come with movies or shows. Those come from **add-ons** you add yo
 
 ### Will it play smoothly?
 
-The PS4 is an older console, so JoPlay labels every stream before you pick it:
+The PS4 is an older console, so JoPlay labels every stream before you pick it. It judges each one by what its name says (resolution, video type, sound), so a stream with a vague name may play heavier than its label:
 
 - **Plays smoothly:** regular 1080p or lower. Pick these.
 - **May stutter:** heavier files (HEVC, 10-bit, Remux, or TrueHD and DTS-HD sound).
