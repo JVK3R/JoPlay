@@ -36,7 +36,8 @@
 > Only use add-ons for content you have the right to watch.
 
 <p align="center">
-  <img src="docs/screen-home.webp" alt="JoPlay's Home: the tab bar, a featured film and the Open Movies row" width="100%">
+  <img src="docs/screen-catalog.webp" alt="JoPlay's Home: a featured film lit across the screen above a row of posters" width="100%"><br>
+  <sub>Catalogs come from your add-ons. Every screenshot here uses public-domain classics and the Blender open films.</sub>
 </p>
 
 > [!TIP]
@@ -51,6 +52,17 @@ JoPlay is an app for jailbroken PS4s. It looks and feels like a streaming app: y
 - **Subtitles** (the film's own and your add-ons'), **sound tracks** and **chapters**.
 - **The next episode** can start by itself, or wait for you.
 - **Easy updates:** JoPlay tells you when a new version is out and downloads it for you, then shows the three steps to install it.
+
+<table>
+  <tr>
+    <td width="50%"><img src="docs/screen-grid.webp" alt="See all: a whole catalog as a grid of posters"></td>
+    <td width="50%"><img src="docs/screen-discover.webp" alt="Discover: browse a catalog by genre"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub><b>See all</b> opens any row as a full grid</sub></td>
+    <td align="center"><sub><b>Discover</b> browses each catalog by genre</sub></td>
+  </tr>
+</table>
 
 JoPlay doesn't come with movies or shows. Those come from **add-ons** you add yourself (see [Add-ons](#add-ons)). To try it right away, it has **Open Movies** built in: three short films the Blender Foundation made free for everyone.
 
@@ -191,7 +203,7 @@ A **VPN** sends your internet traffic through another company's servers first. Y
 | | |
 |---|---|
 | <img src="docs/screen-settings.webp" alt="Settings" width="400"> | <img src="docs/screen-addon.webp" alt="Adding an add-on from your phone" width="400"> |
-| <img src="docs/screen-library.webp" alt="The Library" width="400"> | |
+| <img src="docs/screen-library.webp" alt="The Library" width="400"> | <img src="docs/screen-home.webp" alt="Home with the built-in Open Movies" width="400"> |
 
 </details>
 
