@@ -5,77 +5,122 @@
 <h1 align="center">JoPlay</h1>
 
 <p align="center">
-  A fast, modern player for your PS4 that works with Stremio add-ons.<br>
-  <a href="../../releases/latest"><b>Download the latest .pkg</b></a> · <a href="https://discord.gg/w5dtAMBVgZ"><b>Discord</b></a>
+  <b>A fast, modern player for your PS4 that works with Stremio add-ons.</b><br>
+  Title ID <code>JOST00001</code> · created by JVK3R<br>
+  <i>Proudly created alongside AI by JVK3R</i>
 </p>
 
----
+<p align="center">
+  <a href="https://github.com/JVK3R/JoPlay/releases/latest"><img src="https://img.shields.io/github/v/release/JVK3R/JoPlay?style=for-the-badge&label=Download&color=e5322d" alt="Download the newest release"></a>
+  <a href="https://github.com/JVK3R/JoPlay/releases"><img src="https://img.shields.io/github/downloads/JVK3R/JoPlay/total?style=for-the-badge&label=Downloads&color=2b3240" alt="Total downloads"></a>
+  <a href="https://ko-fi.com/jvk3r"><img src="https://img.shields.io/badge/Support-Ko--fi-FF5E5B?style=for-the-badge&logo=kofi&logoColor=white" alt="Support JoPlay on Ko-fi"></a>
+  <a href="https://discord.gg/w5dtAMBVgZ"><img src="https://img.shields.io/badge/Discord-Join-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Join the Discord"></a>
+</p>
+
+<p align="center">
+  <a href="#install">Install</a> ·
+  <a href="#using-it">Using it</a> ·
+  <a href="#add-ons">Add-ons</a> ·
+  <a href="#stremio-optional">Stremio</a> ·
+  <a href="#mullvad-vpn-optional">Mullvad</a> ·
+  <a href="#words-youll-see">Words you'll see</a> ·
+  <a href="#support-joplay">Support</a>
+</p>
+
+> [!IMPORTANT]
+> **All official communications are here on Discord or Twitter:**
+> [Discord](https://discord.gg/w5dtAMBVgZ) · [Twitter / X (@jvk3r_)](https://x.com/jvk3r_)
+
+> [!WARNING]
+> **JoPlay comes with no content and links to none.** It plays what the add-ons you choose point to.
+> Only use add-ons for content you have the right to watch.
+
+<p align="center">
+  <img src="docs/screen-home.webp" alt="JoPlay's Home: the tab bar, a featured film and the Open Movies row" width="100%">
+</p>
+
+> [!TIP]
+> **JoPlay is free and made by one person.** If you enjoy it, [support it on Ko-fi](https://ko-fi.com/jvk3r)
+> or [with crypto](#support-joplay). Donations keep the servers running and the updates coming.
 
 ## What it is
 
-JoPlay is a homebrew app for jailbroken PS4s. You browse catalogs with posters and details, and JoPlay plays whatever your add-ons find.
+JoPlay is an app for jailbroken PS4s. It looks and feels like a streaming app: you browse rows of movies and shows with posters, open one, pick a stream, and watch.
 
-- Home, Discover, Library and Search, plus **See all** to open any row as a full grid.
-- Subtitles (the film's own and your add-ons'), sound tracks and chapters.
-- The next episode can start by itself, or wait for you.
+- **Home, Discover, Library and Search,** plus **See all** to open any row as a full grid.
+- **Subtitles** (the film's own and your add-ons'), **sound tracks** and **chapters**.
+- **The next episode** can start by itself, or wait for you.
+- **Updates itself:** JoPlay tells you when a new version is out and downloads it for you.
 
-JoPlay has no streams of its own. It comes with two things built in so you can start right away: **Cinemeta**, Stremio's official catalog of titles, posters and episodes, and **Open Movies**, three open films by the Blender Foundation.
+JoPlay doesn't come with movies or shows. Those come from **add-ons** you add yourself (see [Add-ons](#add-ons)). To try it right away, it has **Open Movies** built in: three short films the Blender Foundation made free for everyone.
 
 ## What you need
 
 | | |
 |---|---|
-| **A PS4 with GoldHEN** | Required. Any model: original, Slim or Pro. |
-| **Add-ons** | Needed for anything past the built-in films. See [Add-ons](#add-ons). |
-| **A Stremio account** | Optional and free. Brings your add-ons, library and progress. See [Stremio](#stremio-optional). |
-| **A Mullvad account** | Optional and paid. Keeps JoPlay's traffic private. See [Mullvad](#mullvad-vpn-optional). |
+| **A jailbroken PS4** | Required. Any model: original, Slim or Pro, running [GoldHEN](#words-youll-see). |
+| **Add-ons** | For anything past the built-in films. [How to add them](#add-ons). |
+| **A Stremio account** | Optional and free. Keeps your add-ons, library and progress in one place. [More](#stremio-optional). |
+| **A Mullvad account** | Optional and paid. Keeps what JoPlay does private. [More](#mullvad-vpn-optional). |
 
 ## Install
 
-1. Download the `.pkg` from [Releases](../../releases/latest).
-2. Copy it to the top folder of a USB drive (exFAT or FAT32) and plug it into the PS4.
-   Or send it by FTP to `/data/pkg`.
-3. With GoldHEN running, open **Settings > Debug Settings > Game > Package Installer** and pick JoPlay.
-4. Start JoPlay from the home screen.
+1. Download the `.pkg` file from [Releases](https://github.com/JVK3R/JoPlay/releases/latest).
+2. Copy it to the top folder of a USB drive (formatted exFAT or FAT32) and plug the drive into your PS4.
+   Or send it from your PC over the network ([FTP](#words-youll-see)) into `/data/pkg`.
+3. Start GoldHEN, then go to **Settings > Debug Settings > Game > Package Installer** and pick JoPlay.
+4. JoPlay is now on your home screen.
 
-**To update**, JoPlay tells you when a new version is out and downloads it for you. Then delete JoPlay from the home screen and install the new one from the Package Installer. Your sign-ins, add-ons and settings stay: they're kept in `/data/JoPlay`, which deleting the app doesn't touch.
+**Updating:** when a new version is out, JoPlay says so in **Settings**. Press Square there, then X, and it downloads the update for you. Then it shows three steps: close JoPlay, delete it from the home screen, and install the new one from the Package Installer. You won't lose anything: your sign-ins, add-ons and settings are kept in `/data/JoPlay`, and deleting the app doesn't touch that folder.
 
-## Controls
+## Using it
 
-| Button | In the app | While playing |
+<table>
+  <tr>
+    <td width="50%"><img src="docs/screen-film.webp" alt="A film's page with its streams"></td>
+    <td width="50%"><img src="docs/screen-player.webp" alt="A film playing, with the controls showing"></td>
+  </tr>
+</table>
+
+| Button | Around the app | While watching |
 |---|---|---|
 | **L1 / R1** | Switch tabs | Back or ahead 1 minute |
-| **Left / Right** | Move | Back or ahead 10 seconds |
+| **Left / Right** | Move around | Back or ahead 10 seconds |
 | **X** | Open, choose | Pause, play |
-| **O** | Back | Leave the film |
+| **O** | Go back | Leave the film |
 | **Triangle** | See all, more choices | Subtitles, sound and more |
 | **Square** | Sort, remove | |
 
 ### Will it play smoothly?
 
-JoPlay plays video on the PS4's own processor, so every stream gets a label before you pick it:
+The PS4 is an older console, so JoPlay labels every stream before you pick it:
 
-- **Should play smooth:** 1080p and below. Pick these.
-- **May stutter:** HEVC, 10-bit, Remux, or TrueHD and DTS-HD sound.
-- **Won't play well:** 4K, HEVC 10-bit, 60 fps, AV1. These are hidden at first. Square on the stream list shows them.
+- **Plays smoothly:** regular 1080p or lower. Pick these.
+- **May stutter:** heavier files (HEVC, 10-bit, Remux, or TrueHD and DTS-HD sound).
+- **Won't play well:** too heavy for a PS4 (4K, HEVC 10-bit, 60 fps, AV1). JoPlay hides these at first. Press Square on the stream list to see them anyway.
 
 ## Add-ons
 
-Add-ons are small online services. They give JoPlay its catalogs (the rows of titles) and its streams (what it plays). JoPlay uses the same add-ons as Stremio. Each add-on has a link, usually ending in `/manifest.json`.
+Add-ons are what JoPlay shows and plays. Each one is a small online service that gives JoPlay:
 
-**Signed in with Stremio?** Add them in Stremio on your phone or computer. JoPlay shows your account's add-ons the next time it opens, or at once if you press Triangle on **Settings > Add-ons**.
+- **catalogs:** the rows of titles you browse, and
+- **streams:** the actual video you play.
 
-**Not signed in?** Add them on the PS4, with your phone doing the typing:
+JoPlay works with the same add-ons as Stremio. You add one with its **link**, a web address that usually ends in `/manifest.json`.
 
-1. **Settings > Add-ons > Add from your phone**
-2. Scan the code with your phone's camera.
-3. Paste the add-on's link on the page that opens and send it.
+**If you're signed in with Stremio,** add add-ons in Stremio on your phone or computer. JoPlay picks them up the next time it opens, or straight away if you press Triangle on **Settings > Add-ons**.
+
+**If you're not signed in,** add them on the PS4. Your phone does the typing:
+
+1. Go to **Settings > Add-ons > Add from your phone**.
+2. Scan the code on the TV with your phone's camera.
+3. Paste the add-on's link on the page that opens on your phone, and send it.
 4. Check the add-on's name on the PS4 and press **X**.
 
-Your phone has to be on the same network as the PS4. **Add by link** in the same menu lets you type the link on the PS4 instead.
+Your phone and PS4 have to be on the same Wi-Fi. If the page won't open, use **Add by link** in the same menu to type the link on the PS4 instead.
 
 <details>
-<summary><b>See the four steps</b></summary>
+<summary><b>Show me the four steps</b></summary>
 <br>
 
 | | |
@@ -85,51 +130,91 @@ Your phone has to be on the same network as the PS4. **Add by link** in the same
 
 </details>
 
-In **Settings > Add-ons**, X moves an add-on (Home shows their rows in that order) and Square removes it. Some add-on links hold a private key, so JoPlay never shows or logs a full link.
+In **Settings > Add-ons** you can reorder your add-ons with X (Home shows their rows in that order) and remove one with Square. Some add-on links contain a private key, so JoPlay never shows or saves a full link where others could see it.
 
-JoPlay doesn't suggest or list add-ons. Only use add-ons for content you have the right to watch.
+JoPlay doesn't suggest or list add-ons.
 
 ## Stremio (optional)
 
-[Stremio](https://www.stremio.com) is a free media app for phones, computers and TVs, built around add-ons. A free Stremio account keeps your add-ons, library and progress in one place.
+[Stremio](https://www.stremio.com) is a free streaming app for phones, computers and TVs, built around add-ons. A free Stremio account remembers your add-ons, your library and how far you got in everything you watch.
 
-JoPlay is not Stremio, but it can sign in to your Stremio account:
+JoPlay isn't Stremio, but it can sign in to your Stremio account. When you do:
 
-- Your add-ons, library and Continue watching show up on the PS4.
-- What you watch on the PS4 syncs back to Stremio on your other devices.
+- Your add-ons, library and **Continue watching** show up on the PS4.
+- What you watch on the PS4 shows up in Stremio on your other devices, and the other way round.
 
-**To sign in**, press **Sign in with Stremio** (top right of Home, or in Settings), scan the code with your phone, and confirm. You never type your password on the PS4.
+**To sign in,** press **Sign in with Stremio** (top right of Home, or in Settings), scan the code with your phone, and confirm. You never type your password on the PS4.
 
-**No account?** Everything still works. Your add-ons, library and progress are kept on the PS4.
+**No account?** That's fine. Everything works, and your add-ons, library and progress are kept on the PS4.
 
 ## Mullvad VPN (optional)
 
-[Mullvad](https://mullvad.net) is a paid VPN known for privacy: no email or name, just an account number. A VPN sends your traffic through its own servers, so your internet provider can't see where it goes, and the sites you connect to don't see your home address.
+<img src="docs/screen-mullvad.webp" alt="Mullvad VPN in JoPlay's Settings" width="100%">
 
-Mullvad is built into JoPlay:
+A **VPN** sends your internet traffic through another company's servers first. Your internet provider then can't see which sites you connect to, and those sites see the VPN's address instead of your home's.
 
-- Only JoPlay's traffic goes through Mullvad (catalogs, streams, sign-ins). The rest of the PS4 doesn't.
-- If Mullvad is on but can't connect, JoPlay sends nothing until it can or you turn it off.
-- JoPlay counts as one of your account's devices (Mullvad allows 5).
+[Mullvad](https://mullvad.net) is a paid VPN known for privacy: no email or name, just an account number. It's built into JoPlay:
 
-**To turn it on**, open **Settings > Mullvad VPN > Sign in with Mullvad**. Type your account number on the PS4 or from your phone, pick a location, and switch it on.
+- **Only JoPlay goes through Mullvad.** The rest of your PS4 (games, PSN) doesn't.
+- **Nothing slips out.** If Mullvad is on but can't connect, JoPlay sends nothing until it can, or until you turn it off.
+- **It counts as one device** on your Mullvad account. Mullvad allows 5.
+
+**To turn it on,** go to **Settings > Mullvad VPN > Sign in with Mullvad**. Type your account number on the PS4 or from your phone, pick a location, and switch it on.
+
+## Words you'll see
+
+| Word | What it means |
+|---|---|
+| **Jailbroken PS4** | A PS4 that can run apps from outside the PlayStation Store. |
+| **GoldHEN** | The tool that does that. You start it each time the PS4 turns on. |
+| **Homebrew** | Apps made by people, not by Sony. JoPlay is one. |
+| **.pkg** | An app's install file, like an app download on a phone. |
+| **Package Installer** | Where the PS4 installs a `.pkg` from. It's under **Settings > Debug Settings > Game** once GoldHEN is running. |
+| **FTP** | A way to send files from your PC to the PS4 over your home network. GoldHEN and apps like Itemzflow can turn it on. |
+| **`/data`** | A folder on the PS4 where apps keep their own files. JoPlay's are in `/data/JoPlay`. |
+| **Add-on** | A small online service that gives JoPlay its rows of titles and the video to play. |
+| **Stream** | One way to watch a title. A film can have several, in different qualities. |
+| **VPN** | A service that keeps what you do online private from your internet provider. |
 
 ## Good to know
 
 - **Nothing to watch?** JoPlay plays what your add-ons find. Check **Settings > Add-ons**.
-- **The phone page won't open?** Your phone and PS4 aren't on the same network. Guest Wi-Fi often keeps them apart. Use **Add by link** instead.
-- **It stutters?** Pick a stream marked **Should play smooth**.
-- **Your files** are in `/data/JoPlay` on the PS4. If something goes wrong, `app.log` there tells us what happened.
-- Made and tested on PS4 firmware 11.00 with GoldHEN.
+- **The phone page won't open?** Your phone and PS4 aren't on the same Wi-Fi. Guest Wi-Fi often keeps them apart. Use **Add by link** instead.
+- **It stutters?** Pick a stream marked **Plays smoothly**.
+- **Something went wrong?** `/data/JoPlay/app.log` tells us what happened. Bring it to the [Discord](https://discord.gg/w5dtAMBVgZ).
+- Made and tested on a PS4 on firmware 11.00 with GoldHEN.
 
-## Help
+<details>
+<summary><b>More screens</b></summary>
+<br>
 
-Ask in the [Discord](https://discord.gg/w5dtAMBVgZ). For a bug, say what you did and attach `app.log`.
+| | |
+|---|---|
+| <img src="docs/screen-settings.webp" alt="Settings" width="400"> | <img src="docs/screen-addon.webp" alt="Adding an add-on from your phone" width="400"> |
+| <img src="docs/screen-library.webp" alt="The Library" width="400"> | |
+
+</details>
+
+## Support JoPlay
+
+JoPlay is free, and it's made by one person. Donations pay for what keeps it running: the servers behind the updates and the built-in films, and the time each release takes. Nothing in the app is locked or held back. A donation is a thank-you, never a requirement, and it backs all of JVK3R's projects.
+
+<p align="center">
+  <a href="https://ko-fi.com/jvk3r"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Support JoPlay on Ko-fi" height="40"></a>
+</p>
+
+| How | Where |
+| --- | --- |
+| **Ko-fi** | [ko-fi.com/jvk3r](https://ko-fi.com/jvk3r): card, Apple Pay or Google Pay, once or monthly |
+| **Bitcoin** | `3PeEqA8UTvCuLwR1K5NKP8k11dFAh14rqM` |
+| **USDC on Solana** | `6iWHFuvmBgZtUsyF3GmrF2Ng4tAPnBaEJkD8tr7Hm3cX` |
+
+Supporters are thanked by name on [jobees.org/#support](https://jobees.org/#support) (a private gift stays private) and get the Supporter role on [Discord](https://discord.gg/w5dtAMBVgZ). Gave in crypto? Open a ticket there with the transaction link.
 
 ## Credits
 
 JoPlay is made by JVK3R on JoUI, our own engine. Closed source.
 
-It uses FFmpeg (LGPL 2.1), libwebp, lwIP, Mbed TLS, Monocypher, BLAKE2, Mozilla's list of trusted certificates and the Exo 2 font. Open Movies are Big Buck Bunny, Sintel and Tears of Steel, © Blender Foundation, CC BY 3.0. Full licences and FFmpeg's source are in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
+It uses FFmpeg (LGPL 2.1), libwebp, lwIP, Mbed TLS, Monocypher, BLAKE2, stb, Mozilla's list of trusted certificates and the Exo 2 font. Open Movies are Big Buck Bunny, Sintel and Tears of Steel, © Blender Foundation, CC BY 3.0. Full licences, FFmpeg's source and the files to relink JoPlay are covered in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
 
-JoPlay is an independent app, not affiliated with or endorsed by Stremio, Mullvad or Sony. It comes with no content and links to none: it plays what the add-ons you choose point to. PS4 is a trademark of Sony Interactive Entertainment.
+JoPlay is an independent app, not affiliated with or endorsed by Stremio, Mullvad or Sony. PS4 is a trademark of Sony Interactive Entertainment.
