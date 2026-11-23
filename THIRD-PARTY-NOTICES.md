@@ -12,6 +12,7 @@ JoPlay is © JVK3R, all rights reserved. It is built with the open-source work b
 | [BLAKE2](https://github.com/BLAKE2/BLAKE2) reference code | WireGuard hashing | CC0 1.0 | [BLAKE2-COPYING.txt](licenses/BLAKE2-COPYING.txt) |
 | [stb](https://github.com/nothings/stb) (stb_image, stb_image_write, stb_truetype) | Pictures and text | MIT (or public domain), © Sean Barrett | [stb-LICENSE.txt](licenses/stb-LICENSE.txt) |
 | [Exo 2](https://github.com/googlefonts/Exo-2.0) | The app's font | SIL Open Font License 1.1, © The Exo 2 Project Authors | [Exo2-OFL.txt](licenses/Exo2-OFL.txt) |
+| [Noto Sans Arabic](https://github.com/notofonts/arabic) 2.013 (Bold) | Arabic, Persian and Urdu subtitles | SIL Open Font License 1.1, © 2022 The Noto Project Authors | [NotoSansArabic-OFL.txt](licenses/NotoSansArabic-OFL.txt) |
 | Mozilla's trusted certificate list, as [published by curl](https://curl.se/docs/caextract.html) | Checking secure connections | [Mozilla Public License 2.0](https://www.mozilla.org/MPL/2.0/) | Shipped unchanged as `assets/ca-bundle.pem`; its source is [curl.se/ca/cacert.pem](https://curl.se/ca/cacert.pem) |
 | LLVM compiler-rt builtins | Low-level maths the compiler needs | Apache 2.0 with LLVM exception | [llvm.org/LICENSE.txt](https://llvm.org/LICENSE.txt) |
 
@@ -39,11 +40,13 @@ FFmpeg was configured with these settings (`$PREFIX` is where it installs, `$OO`
 --enable-demuxer='matroska,mov,mpegts,avi,flv,ogg,wav,mp3,aac,ac3,eac3,hls,webm_dash_manifest'
 --enable-decoder='h264,hevc,mpeg4,mpeg2video,vc1,vp8,vp9,av1'
 --enable-decoder='aac,aac_latm,ac3,eac3,mp3,mp2,opus,vorbis,flac,dca,truehd,mlp,alac,pcm_s16le,pcm_s24le,pcm_s32le,pcm_f32le'
---enable-decoder='subrip,ass,ssa,webvtt,mov_text,dvd_subtitle,hdmv_pgs_subtitle' --enable-decoder=webp
---enable-parser='h264,hevc,mpeg4video,mpegvideo,vc1,vp8,vp9,av1,aac,aac_latm,ac3,mpegaudio,opus,vorbis,flac,dca,mlp'
+--enable-decoder='subrip,ass,ssa,webvtt,movtext,text,dvdsub,pgssub,dvbsub' --enable-decoder=webp
+--enable-parser='h264,hevc,mpeg4video,mpegvideo,vc1,vp8,vp9,av1,aac,aac_latm,ac3,mpegaudio,opus,vorbis,flac,dca,mlp,dvdsub,dvbsub'
 --enable-bsf='h264_mp4toannexb,hevc_mp4toannexb,aac_adtstoasc,extract_extradata'
 --enable-swscale --enable-swresample --x86asmexe=nasm
 ```
+
+After configure, `HAVE_SYSCTL` is set to 0 in the generated `config.h` (the PS4 has no usable `sysctl` for counting processors). These are the settings from JoPlay 1.0.1 on. JoPlay 1.0.0 used the same, except `--enable-decoder='subrip,ass,ssa,webvtt,mov_text,dvd_subtitle,hdmv_pgs_subtitle'` and no `dvdsub,dvbsub` parsers.
 
 ## Open Movies
 
