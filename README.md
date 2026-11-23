@@ -36,8 +36,8 @@
 > Only use add-ons for content you have the right to watch.
 
 <p align="center">
-  <img src="docs/screen-catalog.webp" alt="JoPlay's Home: a featured film lit across the screen above a row of posters" width="100%"><br>
-  <sub>Catalogs come from your add-ons. Every screenshot here uses public-domain classics and the Blender open films.</sub>
+  <img src="docs/screen-popular.webp" alt="JoPlay's Home: The Odyssey lit across the screen above the Popular movies row" width="100%"><br>
+  <sub>Stremio's own catalog (Cinemeta), built in. JoPlay shows titles and posters; it doesn't host or provide any film or show.</sub>
 </p>
 
 > [!TIP]
@@ -55,16 +55,24 @@ JoPlay is an app for jailbroken PS4s. It looks and feels like a streaming app: y
 
 <table>
   <tr>
-    <td width="50%"><img src="docs/screen-grid.webp" alt="See all: a whole catalog as a grid of posters"></td>
-    <td width="50%"><img src="docs/screen-discover.webp" alt="Discover: browse a catalog by genre"></td>
+    <td width="50%"><img src="docs/screen-popular-grid.webp" alt="See all: Popular movies as a grid of posters"></td>
+    <td width="50%"><img src="docs/screen-popular-discover.webp" alt="Discover: Popular series"></td>
   </tr>
   <tr>
     <td align="center"><sub><b>See all</b> opens any row as a full grid</sub></td>
     <td align="center"><sub><b>Discover</b> browses each catalog by genre</sub></td>
   </tr>
+  <tr>
+    <td width="50%"><img src="docs/screen-popular-series.webp" alt="Home on Popular series"></td>
+    <td width="50%"><img src="docs/screen-series.webp" alt="A series page with its seasons and episodes"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub><b>Movies and series,</b> side by side</sub></td>
+    <td align="center"><sub><b>Every season and episode,</b> with what you've watched</sub></td>
+  </tr>
 </table>
 
-JoPlay doesn't come with movies or shows. Those come from **add-ons** you add yourself (see [Add-ons](#add-ons)). To try it right away, it has **Open Movies** built in: three short films the Blender Foundation made free for everyone.
+JoPlay shows Stremio's catalog out of the box, but it doesn't come with anything to play. Streams come from **add-ons** you add yourself (see [Add-ons](#add-ons)). To try it right away, it has **Open Movies** built in: three short films the Blender Foundation made free for everyone.
 
 ## What you need
 
@@ -193,7 +201,7 @@ A **VPN** sends your internet traffic through another company's servers first. Y
 - **Nothing to watch?** JoPlay plays what your add-ons find. Check **Settings > Add-ons**.
 - **The phone page won't open?** Your phone and PS4 aren't on the same Wi-Fi. Guest Wi-Fi often keeps them apart. Use **Add by link** instead.
 - **It stutters?** Pick a stream marked **Plays smoothly**.
-- **Something went wrong?** `/data/JoPlay/app.log` tells us what happened. Bring it to the [Discord](https://discord.gg/w5dtAMBVgZ).
+- **Something went wrong?** Use **Settings > Report a problem**, then tell us about it on the [Discord](https://discord.gg/w5dtAMBVgZ).
 - Made and tested on a PS4 on firmware 11.00 with GoldHEN.
 
 <details>
@@ -206,6 +214,19 @@ A **VPN** sends your internet traffic through another company's servers first. Y
 | <img src="docs/screen-library.webp" alt="The Library" width="400"> | <img src="docs/screen-home.webp" alt="Home with the built-in Open Movies" width="400"> |
 
 </details>
+
+## What JoPlay sends
+
+JoPlay sends anonymous usage counts so we can see how many people use it and fix what breaks:
+
+- a random ID made on your PS4 (not tied to your PS4, your PSN or any account),
+- the JoPlay version and the PS4's firmware,
+- whether Mullvad and the Stremio sign-in are switched on,
+- how long JoPlay is open and how many films or episodes are started.
+
+**Never** what you watch, your add-ons, your accounts or your address. Turn it off any time in **Settings > Usage counts**.
+
+**Report a problem** in Settings sends JoPlay's log to us. Before it leaves your PS4, everything personal is taken out: titles, add-ons, links, keys, accounts and addresses. If JoPlay crashes, it sends that log once by itself, cleaned the same way (only while usage counts are on).
 
 ## Support JoPlay
 
