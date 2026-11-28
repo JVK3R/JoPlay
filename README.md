@@ -51,6 +51,7 @@ JoPlay is an app for jailbroken PS4s. It looks and feels like a streaming app: y
 - **Home, Discover, Library and Search,** plus **See all** to open any row as a full grid.
 - **Subtitles** (the film's own and your add-ons'), **sound tracks** and **chapters**. Blu-ray and DVD picture subtitles show as the disc draws them, and Arabic, Persian and Urdu read right to left with their letters joined.
 - **The next episode** can start by itself, or wait for you.
+- **In English or Arabic.** JoPlay starts in your PS4's language; Settings, Language changes it.
 - **Easy updates:** JoPlay tells you when a new version is out and downloads it for you, then shows the three steps to install it.
 
 <table>
